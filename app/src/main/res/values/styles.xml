@@ -122,6 +122,7 @@
 
     <style name="TemplateInput1" parent="TemplateInput">
         <item name="android:maxLines">1</item>
+        <item name="android:textCursorDrawable">@drawable/black_cursor</item>
         <item name="android:singleLine">true</item>
     </style>
 
