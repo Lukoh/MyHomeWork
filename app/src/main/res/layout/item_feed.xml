@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:ignore="UnusedAttribute">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_feed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardElevation="0dp">
+
+        <com.goforer.base.view.widget.AspectRatioImageView
+            android:id="@+id/iv_photo"
+            style="@style/ShadowFeedCardViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            tools:src="@color/white" />
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/title_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_12"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_12"
+            android:layout_marginEnd="@dimen/dp_8"
+            android:singleLine="true"
+            tools:text="Hellow" />
+    </LinearLayout>
+</LinearLayout>

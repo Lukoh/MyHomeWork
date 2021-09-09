@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/v_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:overScrollMode="never">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/v_page"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_50"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:paddingBottom="100dp">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="sans-serif"
+                android:lineSpacingExtra="7sp"
+                android:text="@string/signup"
+                android:textColor="#262626"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/v_nickname"
+                style="@style/TemplateInputLayout1"
+                android:layout_width="0dp"
+                android:layout_marginTop="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_title">
+
+                <TextView
+                    android:id="@+id/tv_nickname_title"
+                    style="@style/TemplateInputHintText2"
+                    android:text="@string/register_nickname"
+                    tools:text="@string/register_nickname" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_nickname"
+                    style="@style/TemplateInput1"
+                    android:nextFocusDown="@id/et_introduction" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/v_introduction"
+                style="@style/TemplateInputLayout1"
+                android:layout_width="0dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="7dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/v_nickname">
+
+                <TextView
+                    android:id="@+id/tv_introduction_title"
+                    style="@style/TemplateInputHintText2"
+                    android:text="@string/introduction"
+                    tools:text="@string/introduction" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_introduction"
+                    style="@style/TemplateInput1"
+                    android:nextFocusDown="@id/et_password" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/v_password"
+                style="@style/TemplateInputLayout1"
+                android:layout_width="0dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="7dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/v_introduction">
+
+                <TextView
+                    android:id="@+id/tv_password_title"
+                    style="@style/TemplateInputHintText2"
+                    android:text="@string/register_password"
+                    tools:text="@string/register_password" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_password"
+                    style="@style/TemplateInput1" />
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_gradient1"
+        android:paddingTop="30dp"
+        android:paddingBottom="@dimen/dp_50"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:id="@+id/bt_next_big"
+            style="@style/NextButtonDefault.primary"
+            android:layout_width="match_parent"
+            android:layout_marginTop="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

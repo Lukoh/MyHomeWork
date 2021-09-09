@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nested_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:scrollbars="none"
+        android:scrollingCache="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/v_card_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="20dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="15dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_picture"
+                style="@style/ShadowHomeCardViewStyle"
+                android:layout_width="@dimen/dp_160"
+                android:layout_height="@dimen/dp_200"
+                android:foreground="?attr/selectableItemBackground"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.goforer.base.view.widget.AspectRatioImageView
+                    android:id="@+id/iv_photo"
+                    style="@style/ShadowFeedCardViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    tools:src="@color/white" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tv_nick_name_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_20"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/user_name"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="@+id/cv_picture"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_nick_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_4"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="#3f3f3f"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/cv_picture"
+                app:layout_constraintTop_toBottomOf="@+id/tv_nick_name_title"
+                tools:text="Tester" />
+
+            <TextView
+                android:id="@+id/tv_introduction_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_20"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/introduction"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="@+id/cv_picture"
+                app:layout_constraintTop_toBottomOf="@+id/tv_nick_name" />
+
+            <TextView
+                android:id="@+id/tv_introduction"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_4"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="#3f3f3f"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/cv_picture"
+                app:layout_constraintTop_toBottomOf="@+id/tv_introduction_title"
+                tools:text="I'm developer" />
+
+            <TextView
+                android:id="@+id/tv_id_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_20"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/user_id"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="@+id/cv_picture"
+                app:layout_constraintTop_toBottomOf="@+id/tv_introduction" />
+
+            <TextView
+                android:id="@+id/tv_id"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_4"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="#3f3f3f"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/cv_picture"
+                app:layout_constraintTop_toBottomOf="@+id/tv_id_title"
+                tools:text="1" />
+
+            <TextView
+                android:id="@+id/tv_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/color_Text3"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/cv_picture"
+                tools:text="Porcelain Hotel Singapore" />
+
+            <TextView
+                android:id="@+id/tv_card_id_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:layout_marginTop="@dimen/dp_20"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/card_id"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_description" />
+
+            <TextView
+                android:id="@+id/tv_card_id"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="#3f3f3f"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_card_id_title"
+                tools:text="1" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_recommend_cards"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20"
+                android:paddingBottom="@dimen/dp_50"
+                android:scrollbars="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/tv_card_id"
+                tools:listitem="@layout/item_item" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

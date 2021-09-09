@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">MyHomeWork</string>
+    <string name="title_home">Home</string>
+    <string name="title_setting">Setting</string>
+    <string name="login">Log In</string>
+    <string name="signup">Sign Up</string>
+    <string name="logout">Log Out</string>
+    <string name="home">Home</string>
+    <string name="feed">Picture Feed</string>
+    <string name="popular_user">Popular User</string>
+    <string name="popular_card">Popular Card</string>
+    <string name="user_info">User Information</string>
+    <string name="user_name">Nick Name</string>
+    <string name="introduction">Introduction</string>
+    <string name="user_id">User ID</string>
+    <string name="card_id">Card ID</string>
+    <string name="next">Next</string>
+
+    <string name="list_no_photo">No Item</string>
+
+    <string name="no_network">No network</string>
+    <string name="network_disconnect">The app cannot be used because there is no internet connection. Please check the setting on your device to ensure that mobile network is activated and that flight mode has been switched off.</string>
+
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string name="setting_sub_title_profile">Profile</string>
+    <string name="setting_my_profile">Personal Details</string>
+    <string name="setting_privacy_policy">Privacy Policy</string>
+    <string name="setting_terms_conditions">Terms and Conditions</string>
+    <string name="setting_notifications">Notification</string>
+    <string name="setting_sub_title_about_us">About us</string>
+    <string name="setting_close_account">Close Account</string>
+    <string name="version">Version %s</string>
+    <string name="setting_company">Goforer Open-Source Group</string>
+
+    <string name="register_nickname">Nickname</string>
+    <string name="register_password">Password</string>
+
+    <string name="no_user">User does not exist.</string>
+    <string name="registered_user">You are already registered user.</string>
+</resources>

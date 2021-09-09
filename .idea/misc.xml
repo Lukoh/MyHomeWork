@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/ic_clamp_small_right.xml" value="0.25833333333333336" />
+        <entry key="app/src/main/res/drawable/ic_close.xml" value="0.25833333333333336" />
+        <entry key="app/src/main/res/drawable/ic_close_account.xml" value="0.25833333333333336" />
+        <entry key="app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.2537037037037037" />
+        <entry key="app/src/main/res/drawable/ic_download_border_24dp.xml" value="0.2537037037037037" />
+        <entry key="app/src/main/res/drawable/ic_faq.xml" value="0.2537037037037037" />
+        <entry key="app/src/main/res/drawable/ic_lock.xml" value="0.2537037037037037" />
+        <entry key="app/src/main/res/drawable/ic_logout.xml" value="0.25833333333333336" />
+        <entry key="app/src/main/res/drawable/ic_personal_details.xml" value="0.25833333333333336" />
+        <entry key="app/src/main/res/drawable/ic_privacy_policy.xml" value="0.25833333333333336" />
+        <entry key="app/src/main/res/drawable/ic_setting.xml" value="0.30462962962962964" />
+        <entry key="app/src/main/res/drawable/ic_setting_notification.xml" value="0.25833333333333336" />
+        <entry key="app/src/main/res/drawable/ic_terms_conditions.xml" value="0.25833333333333336" />
+        <entry key="app/src/main/res/drawable/reactive_next_button_big.xml" value="0.19444444444444445" />
+        <entry key="app/src/main/res/drawable/reactive_next_button_big_disabled.xml" value="0.19444444444444445" />
+        <entry key="app/src/main/res/drawable/reactive_next_button_big_enabled.xml" value="0.19444444444444445" />
+        <entry key="app/src/main/res/drawable/reactive_next_button_big_enabled_sub.xml" value="0.25833333333333336" />
+        <entry key="app/src/main/res/drawable/shape_dialog_bottom.xml" value="0.25833333333333336" />
+        <entry key="app/src/main/res/drawable/shape_dialog_top.xml" value="0.25833333333333336" />
+        <entry key="app/src/main/res/drawable/shape_gradient1.xml" value="0.19444444444444445" />
+        <entry key="app/src/main/res/drawable/shape_rounded1.xml" value="0.30462962962962964" />
+        <entry key="app/src/main/res/drawable/shape_rounded2.xml" value="0.25833333333333336" />
+        <entry key="app/src/main/res/drawable/shape_rounded3.xml" value="0.26944444444444443" />
+        <entry key="app/src/main/res/drawable/shape_rounded4.xml" value="0.26851851851851855" />
+        <entry key="app/src/main/res/drawable/shape_rounded5.xml" value="0.19444444444444445" />
+        <entry key="app/src/main/res/drawable/shape_switch_thumb.xml" value="0.25833333333333336" />
+        <entry key="app/src/main/res/drawable/shape_switch_track_selector.xml" value="0.25833333333333336" />
+        <entry key="app/src/main/res/drawable/toolbar_image_scrim.xml" value="0.18888888888888888" />
+        <entry key="app/src/main/res/drawable/user_profile_picture_small_placeholder.xml" value="0.18888888888888888" />
+        <entry key="app/src/main/res/layout/activity_home.xml" value="0.3061594202898551" />
+        <entry key="app/src/main/res/layout/dialog_loading.xml" value="0.29891304347826086" />
+        <entry key="app/src/main/res/layout/dialog_normal.xml" value="0.27807971014492755" />
+        <entry key="app/src/main/res/layout/fragment_card_info.xml" value="0.140323653291953" />
+        <entry key="app/src/main/res/layout/fragment_home_item_list.xml" value="0.3451086956521739" />
+        <entry key="app/src/main/res/layout/fragment_home_tab.xml" value="0.29891304347826086" />
+        <entry key="app/src/main/res/layout/fragment_item_list.xml" value="0.1828774062816616" />
+        <entry key="app/src/main/res/layout/fragment_log_in.xml" value="0.26458333333333334" />
+        <entry key="app/src/main/res/layout/fragment_photo_detail.xml" value="0.21197916666666666" />
+        <entry key="app/src/main/res/layout/fragment_photos.xml" value="0.3740942028985507" />
+        <entry key="app/src/main/res/layout/fragment_setting.xml" value="0.3740942028985507" />
+        <entry key="app/src/main/res/layout/fragment_sign_up.xml" value="0.2328125" />
+        <entry key="app/src/main/res/layout/fragment_test.xml" value="0.29891304347826086" />
+        <entry key="app/src/main/res/layout/fragment_user.xml" value="0.3740942028985507" />
+        <entry key="app/src/main/res/layout/fragment_user_info.xml" value="0.30520833333333336" />
+        <entry key="app/src/main/res/layout/item_feed.xml" value="0.37256719184430026" />
+        <entry key="app/src/main/res/layout/item_header.xml" value="0.21197916666666666" />
+        <entry key="app/src/main/res/layout/item_item.xml" value="0.21197916666666666" />
+        <entry key="app/src/main/res/layout/item_no_photo.xml" value="0.21197916666666666" />
+        <entry key="app/src/main/res/layout/item_photo.xml" value="0.3740942028985507" />
+        <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.37604166666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

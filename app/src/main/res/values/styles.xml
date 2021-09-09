@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Toolbar -->
+    <style name="Widget.Theme.Toolbar.PhotoDetail" parent="">
+        <item name="titleTextColor">@color/white</item>
+        <item name="subtitleTextColor">@color/white</item>
+        <item name="android:theme">@style/ThemeOverlay.Theme.Toolbar.PhotoDetail</item>
+    </style>
+
+    <style name="ThemeOverlay.Theme.Toolbar.PhotoDetail" parent="">
+        <item name="colorControlNormal">@color/white</item>
+        <item name="actionMenuTextColor">@color/white</item>
+    </style>
+
+    <style name="MaterialImageButton">
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:background">@color/bg0</item>
+        <item name="android:padding">4dp</item>
+    </style>
+
+    <style name="ShadowCardViewStyle">
+        <item name="android:background">@color/white</item>
+        <item name="cardCornerRadius">15dp</item>
+        <item name="cardElevation">5dp</item>
+    </style>
+
+    <style name="SettingItem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingStart">15dp</item>
+        <item name="android:paddingEnd">15dp</item>
+    </style>
+
+    <style name="ListTitle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingTop">20dp</item>
+        <item name="android:paddingBottom">20dp</item>
+        <item name="android:drawablePadding">12dp</item>
+        <item name="android:textColor">@color/color_text1</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="TemplateTitleCollapsed">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/line_grey1</item>
+        android:maxLength="12"
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TemplateTitleExpanded">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">@color/line_grey1</item>
+        <item name="android:max">24</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="LoadingDialogTransparent" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="TextAppearance.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="TextAppearance.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <!--Your custom type style here-->
+    </style>
+
+    <style name="ShadowFeedCardViewStyle">
+        <item name="android:background">@color/grey_5</item>
+        <item name="cardCornerRadius">4dp</item>
+        <item name="cardElevation">5dp</item>
+    </style>
+
+    <style name="ShadowHomeCardViewStyle">
+        <item name="android:background">@color/grey_5</item>
+        <item name="cardCornerRadius">4dp</item>
+        <item name="cardElevation">4dp</item>
+    </style>
+
+    <style name="TemplateInputLayout1">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="TemplateInputHintText2">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+
+        <item name="android:layout_marginBottom">7dp</item>
+
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">@color/reactive_hint_color</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="TemplateInput">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+
+        <item name="android:background">@drawable/shape_rounded5</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/color_text2</item>
+        <item name="android:textColorHint">@color/text_gray1</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="TemplateInput1" parent="TemplateInput">
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="NextButtonDefault">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">18sp</item>
+        <item name="android:paddingBottom">16sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:text">@string/next</item>
+    </style>
+
+    <style name="NextButtonDefault.primary">
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textColor">@color/reactive_btn_txt_white</item>
+        <item name="android:background">@drawable/reactive_next_button_big</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:layout_marginBottom">15dp</item>
+        <item name="android:layout_marginStart">15dp</item>
+        <item name="android:layout_marginEnd">15dp</item>
+    </style>
+</resources>

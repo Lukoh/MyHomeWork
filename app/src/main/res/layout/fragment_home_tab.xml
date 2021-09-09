@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/user_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.goforer.myhomework.presentation.ui.home.HomeTabFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTransparent"
+        android:translationZ="0dp"
+        app:elevation="0dp">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentScrim="?attr/colorAccent"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+            app:titleEnabled="false">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/user_content_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="?attr/actionBarSize"
+                android:background="@color/colorTransparent"
+                android:paddingBottom="@dimen/dp_12"
+                app:layout_collapseMode="parallax"
+                app:layout_collapseParallaxMultiplier="0.5">
+
+                <LinearLayout
+                    android:id="@+id/collections_count_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_8"
+                    android:layout_marginEnd="@dimen/dp_24"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_chainStyle="spread"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/tv_login"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_rounded2"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="center"
+                        android:paddingStart="@dimen/dp_10"
+                        android:paddingTop="@dimen/dp_8"
+                        android:paddingEnd="@dimen/dp_10"
+                        android:paddingBottom="@dimen/dp_8"
+                        android:text="@string/login"
+                        android:textAlignment="center"
+                        android:textColor="@color/color_text4"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        tools:text="@string/login" />
+
+                    <TextView
+                        android:id="@+id/tv_logout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp_20"
+                        android:background="@drawable/shape_rounded2"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="center"
+                        android:paddingStart="@dimen/dp_10"
+                        android:paddingTop="@dimen/dp_8"
+                        android:paddingEnd="@dimen/dp_10"
+                        android:paddingBottom="@dimen/dp_8"
+                        android:text="@string/logout"
+                        android:textAlignment="center"
+                        android:textColor="@color/color_text4"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tv_signup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp_20"
+                        android:background="@drawable/shape_rounded2"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="center"
+                        android:paddingStart="@dimen/dp_10"
+                        android:paddingTop="@dimen/dp_8"
+                        android:paddingEnd="@dimen/dp_10"
+                        android:paddingBottom="@dimen/dp_8"
+                        android:text="@string/signup"
+                        android:textAlignment="center"
+                        android:textColor="@color/color_text4"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:layout_gravity="top"
+                app:layout_collapseMode="pin" />
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/dp_10"
+                android:paddingTop="@dimen/dp_7"
+                android:paddingEnd="@dimen/dp_60"
+                android:paddingBottom="@dimen/dp_7">
+
+                <TextView
+                    android:id="@+id/tab_item_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_4"
+                    android:background="@drawable/shape_rounded1"
+                    android:backgroundTint="@color/colorTransparent"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:paddingStart="@dimen/dp_10"
+                    android:paddingTop="@dimen/dp_8"
+                    android:paddingEnd="@dimen/dp_10"
+                    android:paddingBottom="@dimen/dp_8"
+                    android:text="@string/home"
+                    android:textColor="#3f3f3f"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tab_item_feed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/shape_rounded1"
+                    android:backgroundTint="@color/colorTransparent"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:paddingStart="@dimen/dp_10"
+                    android:paddingTop="@dimen/dp_8"
+                    android:paddingEnd="@dimen/dp_10"
+                    android:paddingBottom="@dimen/dp_8"
+                    android:text="@string/feed"
+                    android:textColor="#3f3f3f"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/v_toolbar_line"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_0.3"
+                android:layout_alignParentBottom="true"
+                android:background="@color/white"
+                android:visibility="gone"
+                tools:visibility="visible" />
+        </RelativeLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/pager_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            app:layout_constraintBottom_toBottomOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

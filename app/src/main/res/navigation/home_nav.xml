@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_nav"
+    app:startDestination="@+id/home_tab">
+
+    <fragment
+        android:id="@+id/home_tab"
+        android:name="com.goforer.myhomework.presentation.ui.home.HomeTabFragment"
+        tools:layout="@layout/fragment_home_tab">
+
+        <action
+            android:id="@+id/action_HomeFragment_to_UserInfoFragment"
+            app:destination="@id/user_info" />
+
+        <action
+            android:id="@+id/action_HomeFragment_to_CardInfoFragment"
+            app:destination="@id/card_info" />
+
+        <action
+            android:id="@+id/action_HomeFragment_to_SignUpFragment"
+            app:destination="@id/sign_up" />
+
+        <action
+            android:id="@+id/action_HomeFragment_to_LogInFragment"
+            app:destination="@id/log_in" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/user_info"
+        android:name="com.goforer.myhomework.presentation.ui.userinfo.UserInfoFragment"
+        tools:layout="@layout/fragment_user_info">
+        <argument
+            android:name="id"
+            app:argType="integer" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/card_info"
+        android:name="com.goforer.myhomework.presentation.ui.cardinfo.CardInfoFragment"
+        tools:layout="@layout/fragment_card_info">
+
+        <action
+            android:id="@+id/action_CardInfoFragment_to_CardInfoFragment"
+            app:destination="@id/card_info" />
+
+        <argument
+            android:name="id"
+            app:argType="integer" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/sign_up"
+        android:name="com.goforer.myhomework.presentation.ui.signup.SignUpFragment"
+        tools:layout="@layout/fragment_sign_up">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/log_in"
+        android:name="com.goforer.myhomework.presentation.ui.login.LogInFragment"
+        tools:layout="@layout/fragment_log_in">
+
+    </fragment>
+
+</navigation>
